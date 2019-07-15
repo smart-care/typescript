@@ -2,6 +2,11 @@
 
 Shared config for Smartcare's projects.
 
+There are 2 packages of interest:
+
+- `@smartcare/tsconfig`: Shared base `tsconfig.json`. [See README.](https://github.com/smart-care/typescript/tree/master/packages/tsconfig-smartcare)
+- `@smartcare/eslint-config-smartcare`: Shared ESLint config. [See README.](https://github.com/smart-care/typescript/tree/master/packages/eslint-config-smartcare)
+
 ---
 
 # Coding Guidelines
