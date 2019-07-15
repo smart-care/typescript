@@ -1,0 +1,13 @@
+{
+  "name": "@smartcare/tsconfig",
+  "version": "0.0.0",
+  "description": "Smartcare TypeScript config",
+  "config": {
+    "access": "public"
+  },
+  "main": "tsconfig.json",
+  "author": "Eric Taylor <eric@smartcare.io>",
+  "repository": "git+https://github.com/smart-care/typescript.git",
+  "homepage": "https://github.com/smart-care/typescript#readme",
+  "license": "MIT"
+}
