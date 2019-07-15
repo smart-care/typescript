@@ -108,26 +108,26 @@ These guidelines are adapted from the TypeScript core's contributor coding guide
 
 For a variety of reasons, we avoid certain constructs, and use some of our own. Among them:
 
-1.  Do not use `for..in` statements; instead, use `ts.forEach`, `ts.forEachKey` and `ts.forEachValue`. Be aware of their slightly different semantics.
+1.  **Do NOT** use `for..in` statements; instead, use `ts.forEach`, `ts.forEachKey` and `ts.forEachValue`. Be aware of their slightly different semantics.
 2.  Try to use `ts.forEach`, `ts.map`, and `ts.filter` instead of loops when it is not strongly inconvenient.
 
 ## Style
 
-0.  Use Prettier and ESLint.
-1.  Use arrow functions over anonymous function expressions.
-1.  Only surround arrow function parameters when necessary. <br />For example, `(x) => x + x` is wrong but the following are correct:
+1.  Use Prettier and ESLint.
+2.  Use arrow functions over anonymous function expressions.
+3.  Only surround arrow function parameters when necessary. <br />For example, `(x) => x + x` is wrong but the following are correct:
     1.  `x => x + x`
     2.  `(x: T) => x + x`
     3.  `(x,y) => x + y`
     4.  `<T>(x: T, y: T) => x === y`
-1.  Always surround loop and conditional bodies with curly braces. Statements on the same line are allowed to omit braces.
-1.  Open curly braces always go on the same line as whatever necessitates them.
-1.  Parenthesized constructs should have no surrounding whitespace. <br />A single space follows commas, colons, and semicolons in those constructs. For example:
+4.  Always surround loop and conditional bodies with curly braces. Statements on the same line are allowed to omit braces.
+5.  Open curly braces always go on the same line as whatever necessitates them.
+6.  Parenthesized constructs should have no surrounding whitespace. <br />A single space follows commas, colons, and semicolons in those constructs. For example:
     1.  `for (var i = 0, n = str.length; i < 10; i++) { }`
     2.  `if (x < 10) { }`
     3.  `function f(x: number, y: string): void { }`
-1.  Use a single declaration per variable statement <br />(i.e. use `var x = 1; var y = 2;` over `var x = 1, y = 2;`).
-1.  Use 2 spaces per indentation.
+7.  Use a single declaration per variable statement <br />(i.e. use `var x = 1; var y = 2;` over `var x = 1, y = 2;`).
+8.  Use 2 spaces per indentation.
 
 ---
 
