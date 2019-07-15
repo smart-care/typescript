@@ -60,8 +60,8 @@ These guidelines are adapted from the TypeScript core's contributor coding guide
 
 ## Types
 
-1.  Do not export types/functions unless you need to share it across multiple components.
-2.  Do not introduce new types/values to the global namespace.
+1.  **Do NOT** export types/functions unless you need to share it across multiple components.
+2.  **Do NOT** introduce new types/values to the global namespace.
 3.  Shared types should be defined in 'types.ts'.
 4.  Within a file, type definitions should come first.
 
@@ -80,7 +80,7 @@ These guidelines are adapted from the TypeScript core's contributor coding guide
 
 ## Comments
 
-1.  Use JSDoc style comments for functions, interfaces, enums, and classes.
+1.  Use [JSDoc](https://jsdoc.app/) style comments for functions, interfaces, enums, and classes.
 2.  Document crazy stuff. Always add `@see <url>` and the current date when referencing external resources, blog posts, tweets, snippets, gists, issues etc.
 3.  Make note conditions upon which hacks and smelly code can be removed.
 
@@ -108,8 +108,8 @@ These guidelines are adapted from the TypeScript core's contributor coding guide
 
 For a variety of reasons, we avoid certain constructs, and use some of our own. Among them:
 
-1.  **Do NOT** use `for..in` statements; instead, use `ts.forEach`, `ts.forEachKey` and `ts.forEachValue`. Be aware of their slightly different semantics.
-2.  Try to use `ts.forEach`, `ts.map`, and `ts.filter` instead of loops when it is not strongly inconvenient.
+1.  **Do NOT** use `for..in` statements; instead, use `arr.forEach`, `Object.keys(obj).forEach`, `Object.values(obj).forEach` and `Object.entries(obj).forEach`. Be aware of their slightly different semantics.
+2.  Try to use `arr.forEach`, `arr.map`, and `arr.filter` instead of loops when it is not strongly inconvenient.
 
 ## Style
 
