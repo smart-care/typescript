@@ -38,11 +38,11 @@ These guidelines are adapted from the TypeScript core's contributor coding guide
 ## Names
 
 1.  Use PascalCase for type names.
-2.  Do not use "I" as a prefix for interface names.
+2.  **Do NOT** use "I" as a prefix for interface names.
 3.  Use PascalCase for enum values.
 4.  Use camelCase for function names.
 5.  Use camelCase for property names and local variables.
-6.  Do not use "\_" as a prefix for private properties.
+6.  **Do NOT** use "\_" as a prefix for private properties.
 7.  Use whole words in names when possible.
 8.  Use `isXXXing` or `hasXXXXed` for variables representing states of things (e.g. `isLoading`, `hasCompletedOnboarding`).
 9.  Give folders/files/components/functions unique names.
@@ -67,7 +67,7 @@ These guidelines are adapted from the TypeScript core's contributor coding guide
 
 ## `null` and `undefined`
 
-1.  Use **undefined**. Do not use `null`. EVER. If null is used (like in legacy Redux code), it should be kept isolated from other code with selectors.
+1.  Use `undefined`. Do not use `null`. EVER. If null is used (like in legacy Redux code), it should be kept isolated from other code with selectors.
 
 ## General Assumptions
 
