@@ -2,8 +2,14 @@
 
 ## Usage
 
+This repository is distributed via Smartcare's npm registry. Add the following to your projects `.yarnrc` file:
+
+```
+"@smart-care:registry" "https://npm.pkg.github.com"
+```
+
 ```bash
-yarn add @smartcare/tsconfig --dev
+yarn add @smart-care/tsconfig --dev
 ```
 
 Then in your project's `tsconfig.json`:
