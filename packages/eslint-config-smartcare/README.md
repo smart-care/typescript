@@ -4,10 +4,16 @@ This package includes the shareable ESLint configuration used by Smartcare.
 
 ## Requirements
 
+This repository is distributed via Smartcare's npm registry. Add the following to your projects `.yarnrc` file:
+
+```
+"@smart-care:registry" "https://npm.pkg.github.com"
+```
+
 To see a list of the peer dependency requirements run:
 
 ```sh
-npm info "@smartcare/eslint-config-smartcare@latest" peerDependencies
+npm info "@smart-care/eslint-config-smartcare@latest" peerDependencies
 ```
 
 ## Install
@@ -15,7 +21,7 @@ npm info "@smartcare/eslint-config-smartcare@latest" peerDependencies
 Run the following command:
 
 ```sh
-npx install-peerdeps --dev @smartcare/eslint-config-smartcare
+npx install-peerdeps --dev @smart-care/eslint-config-smartcare
 ```
 
 Don't worry if you are using Yarn `install-peerdeps` will work with Yarn.
