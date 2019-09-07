@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.3](https://github.com/smart-care/typescript/compare/v7.1.2...v7.1.3) (2019-09-07)
+
+
+### Bug Fixes
+
+* **eslint-config-smartcare:** rule typo ([c3ca254](https://github.com/smart-care/typescript/commit/c3ca254))
+
+
+
+
+
 ## [7.1.2](https://github.com/smart-care/typescript/compare/v7.1.1...v7.1.2) (2019-09-07)
 
 
