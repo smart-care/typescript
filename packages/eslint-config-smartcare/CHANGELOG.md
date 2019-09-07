@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0](https://github.com/smart-care/typescript/compare/v7.0.0...v7.1.0) (2019-09-07)
+
+
+### Features
+
+* **eslint-config-smartcare:** update peerDeps ([7944f56](https://github.com/smart-care/typescript/commit/7944f56))
+
+
+
+
+
 # [7.0.0](https://github.com/smart-care/typescript/compare/v6.0.1...v7.0.0) (2019-08-16)
 
 
