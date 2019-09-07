@@ -1,6 +1,6 @@
 {
   "name": "@smart-care/eslint-config-smartcare",
-  "version": "7.1.1",
+  "version": "7.1.2",
   "description": "Smartcare ESLint Config",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
