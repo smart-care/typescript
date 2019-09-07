@@ -113,7 +113,7 @@ module.exports = {
         camelcase: 'off',
         '@typescript-eslint/camelcase': 'error',
         '@typescript-eslint/class-name-casing': 'error',
-        '@typescxript-eslint/consistent-type-assertions': 'error',
+        '@typescript-eslint/consistent-type-assertions': 'error',
         '@typescript-eslint/consistent-type-definitions': [
           'error',
           'interface',
