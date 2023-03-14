@@ -8,17 +8,23 @@ var restrictedGlobals = require('confusing-browser-globals');
 module.exports = {
   root: true,
 
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
 
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
+    requireConfigFile: false,
+    parser: '@typescript-eslint/parser',
+    babelOptions: {
+      presets: ['@babel/preset-react'],
+      plugins: ['@babel/plugin-proposal-class-properties'],
+    },
     ecmaFeatures: {
       jsx: true,
     },
   },
 
-  extends: ['airbnb', 'prettier', 'prettier/react'],
+  extends: ['airbnb', 'prettier'],
 
   plugins: ['import', 'jsx-a11y', 'react', 'react-hooks', 'prettier'],
 
@@ -47,13 +53,20 @@ module.exports = {
   },
 
   rules: {
+    camelcase: 'off',
     'import/no-extraneous-dependencies': [
       'error',
       { optionalDependencies: false, devDependencies: true },
     ],
     'import/prefer-default-export': ['off'],
     'no-restricted-globals': ['error'].concat(restrictedGlobals),
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': 'warn',
     'no-underscore-dangle': 'off',
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'warn',
+    'default-param-last': 'off',
+    '@typescript-eslint/default-param-last': 'off',
     'prettier/prettier': 'error',
     'react/destructuring-assignment': [
       'error',
@@ -110,9 +123,6 @@ module.exports = {
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/array-type': 'error',
         '@typescript-eslint/ban-types': 'error',
-        camelcase: 'off',
-        '@typescript-eslint/camelcase': 'error',
-        '@typescript-eslint/class-name-casing': 'error',
         '@typescript-eslint/consistent-type-assertions': 'error',
         '@typescript-eslint/consistent-type-definitions': [
           'error',
@@ -122,9 +132,9 @@ module.exports = {
         // '@typescript-eslint/explicit-member-accessibility': 'error',
         indent: 'off',
         // '@typescript-eslint/indent': 'error',
-        '@typescript-eslint/interface-name-prefix': 'error',
         // '@typescript-eslint/member-delimiter-style': 'error',
         'no-array-constructor': 'off',
+        '@typescript-eslint/naming-convention': 'error',
         '@typescript-eslint/no-array-constructor': 'error',
         '@typescript-eslint/no-empty-interface': 'error',
         '@typescript-eslint/no-explicit-any': 'warn',
