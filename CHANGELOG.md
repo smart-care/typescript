@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.0](https://github.com/smart-care/typescript/compare/v7.1.3...v7.2.0) (2023-03-01)
+
+
+### Features
+
+- **eslint-config-smartcare:** update Babel, ESlint, Typescript ([46f6085](https://github.com/smart-care/typescript/commit/46f6085))
+
+
+
+
+
 ## [7.1.3](https://github.com/smart-care/typescript/compare/v7.1.2...v7.1.3) (2019-09-07)
 
 
